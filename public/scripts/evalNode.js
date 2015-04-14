@@ -50,8 +50,8 @@ var Node = React.createClass({
         {this.createNode(m.getIn(config, ["children", 0]))}
         <span>{m.get(config, "prependSource", "")}</span>
         <span>{m.get(config, "textSource", "")}</span>
-        <span>{m.get(config, "appendSource", "")}</span>
         {this.createNode(m.getIn(config, ["children", 1]))}
+        <span>{m.get(config, "appendSource", "")}</span>
       </span>
     );
   },
